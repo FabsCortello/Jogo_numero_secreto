@@ -7,6 +7,7 @@ function exibirTextoNaTela (Tag, texto){
     let campo = document.querySelector (Tag);
     campo.innerHTML = texto;
     responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
+    alert ('Você deseja que a tela seja lida? Clique em ok, depois clique em Allow para ativar a leitura ou em Deny para não ativar.')
 }
 
 function exibirMensagemInicial() {
